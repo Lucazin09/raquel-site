@@ -136,6 +136,49 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--dark);
 .checkout-btn:hover{background:var(--gold);color:#fff}
 .whatsapp-btn{width:100%;background:#25D366;color:#fff;border:none;padding:14px;font-family:'DM Sans',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;cursor:pointer;transition:background .2s;border-radius:3px;margin-top:.75rem;display:flex;align-items:center;justify-content:center;gap:8px}
 .whatsapp-btn:hover{background:#1ebe5d}
+/* ── PIX ── */
+.pix-btn{width:100%;background:#6b2af7;color:#fff;border:none;padding:14px;font-family:'DM Sans',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;cursor:pointer;transition:background .2s;border-radius:3px;margin-top:.6rem;display:flex;align-items:center;justify-content:center;gap:8px}
+.pix-btn:hover{background:#5520cc}
+.pix-overlay{display:none;position:fixed;inset:0;background:rgba(18,14,10,.72);z-index:500;align-items:center;justify-content:center;padding:1rem}
+.pix-overlay.open{display:flex}
+.pix-modal{background:var(--cream);border:2px solid var(--gold);border-radius:14px;padding:2rem 1.75rem;max-width:400px;width:100%;text-align:center;position:relative;box-shadow:0 24px 64px rgba(0,0,0,.32);max-height:92vh;overflow-y:auto}
+.pix-step{display:none}.pix-step.active{display:block}
+.pix-logo{width:56px;height:56px;background:#6b2af7;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem}
+.pix-title{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:700;color:var(--dark);margin-bottom:.2rem}
+.pix-sub{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem}
+.pix-total-lbl{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--text-muted);margin-bottom:.2rem}
+.pix-total-val{font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:700;color:var(--dark);margin-bottom:1.25rem}
+.pix-key-box{background:#fff;border:1px solid var(--border);border-radius:8px;padding:.9rem 1rem;margin-bottom:1rem;text-align:left}
+.pix-key-type{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--text-muted);margin-bottom:.35rem}
+.pix-key-val{font-size:15px;font-weight:700;color:var(--dark);letter-spacing:1px}
+.pix-copy-btn{width:100%;background:var(--dark);color:var(--gold-light);border:none;padding:13px;font-family:'DM Sans',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;cursor:pointer;border-radius:4px;transition:all .25s;display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:.75rem}
+.pix-copy-btn:hover,.pix-copy-btn.copied{background:#22a85a;color:#fff}
+.pix-instr{font-size:11px;color:var(--text-muted);line-height:1.75;text-align:left;background:#f9f5ee;border-radius:6px;padding:.85rem 1rem;margin-bottom:1.25rem}
+.pix-instr strong{color:var(--dark)}
+.pix-paid-btn{width:100%;background:#6b2af7;color:#fff;border:none;padding:14px;font-family:'DM Sans',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;cursor:pointer;border-radius:4px;transition:background .2s;display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:.6rem}
+.pix-paid-btn:hover{background:#5520cc}
+.pix-cancel-btn{background:none;border:1px solid var(--border);color:var(--text-muted);font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:9px 20px;border-radius:4px;cursor:pointer;transition:all .2s;font-family:'DM Sans',sans-serif;width:100%}
+.pix-cancel-btn:hover{border-color:var(--gold);color:var(--dark)}
+/* Upload area */
+.upload-area{border:2px dashed var(--border);border-radius:10px;padding:2rem 1rem;text-align:center;cursor:pointer;transition:all .25s;position:relative;margin-bottom:1rem;background:#fff}
+.upload-area:hover,.upload-area.drag{border-color:var(--gold);background:#fffdf7}
+.upload-area input[type=file]{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%}
+.upload-icon{font-size:36px;margin-bottom:.5rem;display:block}
+.upload-label{font-size:12px;color:var(--text-muted);letter-spacing:.5px}
+.upload-label strong{color:var(--gold)}
+.upload-formats{font-size:10px;color:var(--text-muted);margin-top:.25rem;letter-spacing:.5px}
+.upload-preview{display:none;margin-bottom:1rem;position:relative}
+.upload-preview img{max-width:100%;max-height:180px;border-radius:8px;border:1px solid var(--border);object-fit:contain}
+.upload-preview .remove-file{position:absolute;top:-8px;right:-8px;background:var(--dark);color:#fff;border:none;width:24px;height:24px;border-radius:50%;font-size:12px;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.upload-preview .file-icon{font-size:48px;padding:1rem}
+.upload-name{font-size:12px;color:var(--text-muted);margin-top:.4rem;word-break:break-all}
+.send-comp-btn{width:100%;background:#25D366;color:#fff;border:none;padding:14px;font-family:'DM Sans',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;cursor:pointer;border-radius:4px;transition:background .2s;display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:.6rem}
+.send-comp-btn:hover{background:#1ebe5d}
+.send-comp-btn:disabled{background:#aaa;cursor:not-allowed}
+/* Step 3 — sucesso */
+.pix-success-icon{font-size:56px;margin-bottom:.75rem;display:block}
+.pix-success-title{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:700;color:var(--dark);margin-bottom:.5rem}
+.pix-success-sub{font-size:13px;color:var(--text-muted);line-height:1.6;margin-bottom:1.5rem}
 
 /* ── TOAST ── */
 .toast{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%) translateY(100px);background:var(--dark);color:var(--gold-light);padding:12px 24px;border-radius:3px;font-size:13px;border:1px solid var(--gold);z-index:400;transition:transform .35s cubic-bezier(.25,.46,.45,.94);white-space:nowrap}
@@ -604,6 +647,10 @@ function updateCartUI() {
     <button class="whatsapp-btn" onclick="sendWhatsApp()">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
       Pedir pelo WhatsApp
+    </button>
+    <button class="pix-btn" onclick="openPix()">
+      <svg width="17" height="17" viewBox="0 0 512 512" fill="currentColor"><path d="M400.3 321.5l-83.8-83.8c-3.5-3.5-9.1-3.5-12.6 0l-38.2 38.2c-10.1 10.1-26.5 10.1-36.6 0l-38.2-38.2c-3.5-3.5-9.1-3.5-12.6 0l-83.8 83.8c-16.9 16.9-16.9 44.3 0 61.2l59.7 59.7c8.4 8.4 19.7 13.1 31.5 13.1h123.2c11.8 0 23.1-4.7 31.5-13.1l59.7-59.7c17-16.9 17-44.3.2-61.2zm-265.6 103.2l-59.7-59.7c-10.1-10.1-10.1-26.5 0-36.6l71.2-71.2 22.1 22.1c17.6 17.6 46.2 17.6 63.8 0l22.1-22.1 71.2 71.2c10.1 10.1 10.1 26.5 0 36.6l-59.7 59.7c-4.7 4.7-11.1 7.4-17.8 7.4H152.4c-6.6 0-13-2.6-17.7-7.4zm265.6-249.4l-59.7-59.7c-8.4-8.4-19.7-13.1-31.5-13.1H185.9c-11.8 0-23.1 4.7-31.5 13.1l-59.7 59.7c-16.9 16.9-16.9 44.3 0 61.2l83.8 83.8c3.5 3.5 9.1 3.5 12.6 0l38.2-38.2c10.1-10.1 26.5-10.1 36.6 0l38.2 38.2c3.5 3.5 9.1 3.5 12.6 0l83.8-83.8c16.9-17 16.9-44.3 0-61.2zm-12.5 48.7l-71.2 71.2-22.1-22.1c-17.6-17.6-46.2-17.6-63.8 0l-22.1 22.1-71.2-71.2c-10.1-10.1-10.1-26.5 0-36.6l59.7-59.7c4.7-4.7 11.1-7.4 17.8-7.4h123.2c6.7 0 13.1 2.6 17.8 7.4l59.7 59.7c10.2 10.1 10.2 26.5.2 36.6z"/></svg>
+      Pagar com Pix
     </button>`;
 }
 
@@ -651,6 +698,261 @@ function closeMobileNav() {
   overlay.classList.add('hidden');
   setTimeout(() => overlay.style.display = 'none', 500);
 })();
+</script>
+<!-- ═══ MODAL PIX ═══ -->
+<div class="pix-overlay" id="pix-overlay" onclick="pixOverlayClick(event)">
+  <div class="pix-modal" onclick="event.stopPropagation()">
+
+    <!-- STEP 1: Chave Pix -->
+    <div class="pix-step active" id="pix-step1">
+      <div class="pix-logo">
+        <svg width="28" height="28" viewBox="0 0 512 512" fill="#fff"><path d="M400.3 321.5l-83.8-83.8c-3.5-3.5-9.1-3.5-12.6 0l-38.2 38.2c-10.1 10.1-26.5 10.1-36.6 0l-38.2-38.2c-3.5-3.5-9.1-3.5-12.6 0l-83.8 83.8c-16.9 16.9-16.9 44.3 0 61.2l59.7 59.7c8.4 8.4 19.7 13.1 31.5 13.1h123.2c11.8 0 23.1-4.7 31.5-13.1l59.7-59.7c17-16.9 17-44.3.2-61.2zm-265.6 103.2l-59.7-59.7c-10.1-10.1-10.1-26.5 0-36.6l71.2-71.2 22.1 22.1c17.6 17.6 46.2 17.6 63.8 0l22.1-22.1 71.2 71.2c10.1 10.1 10.1 26.5 0 36.6l-59.7 59.7c-4.7 4.7-11.1 7.4-17.8 7.4H152.4c-6.6 0-13-2.6-17.7-7.4zm265.6-249.4l-59.7-59.7c-8.4-8.4-19.7-13.1-31.5-13.1H185.9c-11.8 0-23.1 4.7-31.5 13.1l-59.7 59.7c-16.9 16.9-16.9 44.3 0 61.2l83.8 83.8c3.5 3.5 9.1 3.5 12.6 0l38.2-38.2c10.1-10.1 26.5-10.1 36.6 0l38.2 38.2c3.5 3.5 9.1 3.5 12.6 0l83.8-83.8c16.9-17 16.9-44.3 0-61.2zm-12.5 48.7l-71.2 71.2-22.1-22.1c-17.6-17.6-46.2-17.6-63.8 0l-22.1 22.1-71.2-71.2c-10.1-10.1-10.1-26.5 0-36.6l59.7-59.7c4.7-4.7 11.1-7.4 17.8-7.4h123.2c6.7 0 13.1 2.6 17.8 7.4l59.7 59.7c10.2 10.1 10.2 26.5.2 36.6z"/></svg>
+      </div>
+      <div class="pix-title">Pagar com Pix</div>
+      <div class="pix-sub">Pagamento instantâneo</div>
+      <div class="pix-total-lbl">Total do pedido</div>
+      <div class="pix-total-val" id="pix-total-val">R$ 0,00</div>
+      <div class="pix-key-box">
+        <div class="pix-key-type">CNPJ — Chave Pix PJ</div>
+        <div class="pix-key-val">58.912.085/0001-64</div>
+      </div>
+      <button class="pix-copy-btn" id="pix-copy-btn" onclick="copiarChavePix()">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+        Copiar chave Pix
+      </button>
+      <div class="pix-instr">
+        <strong>Como pagar:</strong><br>
+        1. Abra o app do seu banco<br>
+        2. Acesse <strong>Pix → Pagar</strong><br>
+        3. Cole a chave: <strong>58912085000164</strong><br>
+        4. Confirme o valor e finalize o pagamento
+      </div>
+      <button class="pix-paid-btn" onclick="pixGoStep2()">
+        Já paguei — Enviar comprovante
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+      <button class="pix-cancel-btn" onclick="closePix()">Cancelar</button>
+    </div>
+
+    <!-- STEP 2: Upload comprovante -->
+    <div class="pix-step" id="pix-step2">
+      <div class="pix-logo" style="background:#25D366">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+      </div>
+      <div class="pix-title">Enviar Comprovante</div>
+      <div class="pix-sub" style="margin-bottom:1.25rem">Anexe a foto ou PDF do comprovante</div>
+
+      <!-- Preview do arquivo -->
+      <div class="upload-preview" id="upload-preview">
+        <button class="remove-file" onclick="removerArquivo()" title="Remover">✕</button>
+        <img id="preview-img" src="" alt="Comprovante" style="display:none">
+        <div id="preview-pdf" style="display:none">
+          <div class="file-icon">📄</div>
+        </div>
+        <div class="upload-name" id="upload-name"></div>
+      </div>
+
+      <!-- Área de upload -->
+      <div class="upload-area" id="upload-area" ondragover="pixDragOver(event)" ondragleave="pixDragLeave(event)" ondrop="pixDrop(event)">
+        <input type="file" id="comp-file" accept="image/*,application/pdf" onchange="pixFileSelected(this)">
+        <span class="upload-icon">🧾</span>
+        <div class="upload-label"><strong>Clique aqui</strong> ou arraste o comprovante</div>
+        <div class="upload-formats">JPG · PNG · PDF — até 10MB</div>
+      </div>
+
+      <div class="pix-instr" style="margin-bottom:1rem">
+        O comprovante será enviado direto para o WhatsApp da loja junto com os detalhes do seu pedido. ✅
+      </div>
+
+      <button class="send-comp-btn" id="send-comp-btn" onclick="enviarComprovante()" disabled>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Enviar pelo WhatsApp
+      </button>
+      <button class="pix-cancel-btn" onclick="pixGoStep1()" style="margin-top:.5rem">← Voltar</button>
+    </div>
+
+    <!-- STEP 3: Sucesso -->
+    <div class="pix-step" id="pix-step3">
+      <span class="pix-success-icon">✅</span>
+      <div class="pix-success-title">Comprovante enviado!</div>
+      <div class="pix-success-sub">
+        Seu comprovante foi encaminhado ao WhatsApp da loja.<br>
+        Em breve confirmaremos seu pagamento. Obrigada! 🌸
+      </div>
+      <button class="pix-paid-btn" onclick="pixFinalizar()" style="background:#22a85a">
+        Concluir pedido
+      </button>
+    </div>
+
+  </div>
+</div>
+
+<script>
+// ═══════════════════════════════════════════════════════
+// PIX — Comprovante via WhatsApp
+// ═══════════════════════════════════════════════════════
+const PIX_KEY    = '58912085000164';
+const PIX_WA_NUM = '5598988236983'; // número da loja para receber comprovantes
+let   _pixFile   = null;
+
+function openPix() {
+  const total = cart.reduce((s,i) => s + i.price * i.qty, 0);
+  document.getElementById('pix-total-val').textContent = fmt(total);
+  _pixFile = null;
+  resetUpload();
+  pixGoStep1();
+  document.getElementById('pix-overlay').classList.add('open');
+}
+
+function closePix() {
+  document.getElementById('pix-overlay').classList.remove('open');
+}
+
+function pixOverlayClick(e) {
+  if (e.target === document.getElementById('pix-overlay')) closePix();
+}
+
+function pixGoStep1() {
+  document.querySelectorAll('.pix-step').forEach(s => s.classList.remove('active'));
+  document.getElementById('pix-step1').classList.add('active');
+}
+
+function pixGoStep2() {
+  document.querySelectorAll('.pix-step').forEach(s => s.classList.remove('active'));
+  document.getElementById('pix-step2').classList.add('active');
+}
+
+// ─── Copiar chave ─────────────────────────────────────
+function copiarChavePix() {
+  const btn = document.getElementById('pix-copy-btn');
+  const copy = (txt) => {
+    btn.innerHTML = `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Chave copiada!`;
+    btn.classList.add('copied');
+    showToast('✅ Chave Pix copiada!');
+    setTimeout(() => {
+      btn.innerHTML = `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg> Copiar chave Pix`;
+      btn.classList.remove('copied');
+    }, 3000);
+  };
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(PIX_KEY).then(() => copy()).catch(() => legacyCopy());
+  } else { legacyCopy(); }
+  function legacyCopy() {
+    const el = Object.assign(document.createElement('textarea'), {value: PIX_KEY, style: 'position:fixed;opacity:0'});
+    document.body.appendChild(el); el.select(); document.execCommand('copy'); document.body.removeChild(el);
+    copy();
+  }
+}
+
+// ─── Upload ───────────────────────────────────────────
+function pixFileSelected(input) {
+  if (!input.files || !input.files[0]) return;
+  const file = input.files[0];
+  if (file.size > 10 * 1024 * 1024) { showToast('⚠️ Arquivo muito grande (máx. 10MB)'); return; }
+  _pixFile = file;
+  mostrarPreview(file);
+  document.getElementById('send-comp-btn').disabled = false;
+}
+
+function mostrarPreview(file) {
+  const area    = document.getElementById('upload-area');
+  const preview = document.getElementById('upload-preview');
+  const img     = document.getElementById('preview-img');
+  const pdf     = document.getElementById('preview-pdf');
+  const nome    = document.getElementById('upload-name');
+
+  area.style.display   = 'none';
+  preview.style.display = 'block';
+  nome.textContent     = file.name;
+
+  if (file.type.startsWith('image/')) {
+    img.style.display = 'block';
+    pdf.style.display = 'none';
+    const reader = new FileReader();
+    reader.onload = e => img.src = e.target.result;
+    reader.readAsDataURL(file);
+  } else {
+    img.style.display = 'none';
+    pdf.style.display = 'block';
+  }
+}
+
+function removerArquivo() {
+  _pixFile = null;
+  resetUpload();
+  document.getElementById('send-comp-btn').disabled = true;
+}
+
+function resetUpload() {
+  document.getElementById('upload-area').style.display  = 'block';
+  document.getElementById('upload-preview').style.display = 'none';
+  document.getElementById('preview-img').src = '';
+  document.getElementById('upload-name').textContent = '';
+  document.getElementById('comp-file').value = '';
+  if (document.getElementById('send-comp-btn'))
+    document.getElementById('send-comp-btn').disabled = true;
+}
+
+function pixDragOver(e)  { e.preventDefault(); document.getElementById('upload-area').classList.add('drag'); }
+function pixDragLeave()  { document.getElementById('upload-area').classList.remove('drag'); }
+function pixDrop(e) {
+  e.preventDefault();
+  document.getElementById('upload-area').classList.remove('drag');
+  const file = e.dataTransfer.files[0];
+  if (file) { document.getElementById('comp-file').files; _pixFile = file; mostrarPreview(file); document.getElementById('send-comp-btn').disabled = false; }
+}
+
+// ─── Enviar comprovante via WhatsApp ──────────────────
+function enviarComprovante() {
+  if (!_pixFile) { showToast('⚠️ Selecione o comprovante primeiro'); return; }
+
+  const total = cart.reduce((s,i) => s + i.price * i.qty, 0);
+  const itens = cart.map(i => `  • ${i.qty}x ${i.name} — ${fmt(i.price * i.qty)}`).join('\n');
+
+  const msg = [
+    '🧾 *COMPROVANTE PIX — Raquel Confecções*',
+    '',
+    '📦 *Pedido:*',
+    itens,
+    '',
+    `💰 *Total: ${fmt(total)}*`,
+    '',
+    '✅ Pagamento realizado via Pix',
+    `🔑 Chave: ${PIX_KEY}`,
+    '',
+    '_(Comprovante anexado abaixo)_',
+  ].join('\n');
+
+  const waUrl = `https://wa.me/${PIX_WA_NUM}?text=${encodeURIComponent(msg)}`;
+
+  // Abre WhatsApp com a mensagem — instrui a anexar o arquivo manualmente
+  window.open(waUrl, '_blank');
+
+  // Tenta compartilhar o arquivo via Web Share API (mobile) simultaneamente
+  if (navigator.share && navigator.canShare && navigator.canShare({ files: [_pixFile] })) {
+    navigator.share({
+      title: 'Comprovante Pix — Raquel Confecções',
+      text:  msg,
+      files: [_pixFile],
+    }).catch(() => {});
+  }
+
+  // Avança para step de sucesso
+  setTimeout(() => {
+    document.querySelectorAll('.pix-step').forEach(s => s.classList.remove('active'));
+    document.getElementById('pix-step3').classList.add('active');
+  }, 600);
+}
+
+function pixFinalizar() {
+  closePix();
+  showToast('🎉 Pedido confirmado! Obrigada!');
+  setTimeout(() => { cart = []; updateCartUI(); toggleCart(); }, 800);
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closePix();
+});
 </script>
 </body>
 </html>
